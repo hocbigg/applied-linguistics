@@ -5,24 +5,9 @@ description: Path to a free self-taught education in Applied Linguistics
 
 ## Introduction
 
-Applied linguistics investigates real-world problems where language plays a central role. Rather than treating language solely as an abstract formal system, the discipline connects linguistic theory to practical human activity — examining how languages are learned and taught, how the mind produces and comprehends speech, and how social context shapes communication.
 
-This curriculum assumes no prior background in linguistics or language science. It is designed for self-directed learners — including current or aspiring language teachers, curriculum designers, and independent students of language — who want a structured, academically grounded foundation in the field rather than ad-hoc tips or disconnected overviews.
 
-### How to Navigate the Sequence
-
-The curriculum moves deliberately from descriptive linguistic foundations to applied domains:
-
-- **Linguistic foundations first:** Begin with Introduction to Linguistics to build a broad conceptual map of the discipline. From there, work through Phonetics and Phonology, Morphology, Syntax, and Grammar, and Semantics and Pragmatics. These foundational subjects provide the descriptive tools, transcription skills, and structural concepts you will need to analyze language systematically. The open-access textbook *Essentials of Linguistics* appears across several of these subjects and serves as a dependable, unified backbone throughout this early stage.
-- **Applied domains next:** Once you understand how language systems are organized, proceed into the applied and cognitive subjects: Sociolinguistics, Second Language Acquisition, Language Teaching Methodology, and Psycholinguistics and First Language Acquisition. While the early structural subjects build directly upon each other and are best studied in sequence, the applied subjects offer greater flexibility. You can adjust the order among them to suit your immediate goals — for instance, prioritizing Second Language Acquisition and Language Teaching Methodology if your primary aim is classroom practice.
-
-### Scope
-
-This curriculum covers only the foundational core — the baseline knowledge that practitioners across applied linguistics share. It does not attempt to cover every specialized niche or advanced debate. Once you have worked through these core subjects, you can expand your studies by visiting [Advanced Topics](advanced_topics.md) to explore specialized subfields or working through [Projects](projects.md) to test your understanding with hands-on analysis and applied tasks.
-
-## Applied Linguistics
-
-The following constitutes the foundational core for self-directed learners in Applied Linguistics. Each subject represents knowledge that virtually every practitioner in the field needs before any specialization. The sequence moves from general linguistic foundations to applied domains.
+## Curriculum
 
 ### Introduction to Linguistics
 
