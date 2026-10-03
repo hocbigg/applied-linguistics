@@ -1,61 +1,73 @@
 # Advanced Topics: Applied Linguistics
 
-The following specialization tracks build directly on the Core Curriculum, branching into the major subdisciplines of applied linguistics where practitioners and advanced learners most often focus. Each track represents a genuinely distinct area of practice and research.
+These specialization tracks build directly upon the foundational knowledge established in the Core Curriculum, allowing self-directed learners to pursue advanced methodologies, practical frameworks, and specialized subdisciplines. Learners are encouraged to select one or two tracks aligned with their intellectual interests or professional goals rather than attempting to complete every track.
 
-- **Language Assessment and Testing** - The design, development, and validation of language tests and assessment procedures.
-- **Corpus Linguistics** - Computational and statistical analysis of large language datasets to discover patterns of authentic language use.
-- **Discourse Analysis** - The study of how spoken and written language operates in social contexts, including critical discourse analysis and conversation analysis.
-- **English for Specific Purposes** - Teaching English tailored to particular academic, professional, or occupational domains, grounded in genre analysis and needs assessment.
-- **Intercultural Communication and Pragmatics** - How cultural context shapes language use, speech acts, politeness, and communication across linguistic and cultural boundaries.
+- **Language Assessment and Testing** - The theoretical frameworks, statistical validity arguments, and practical design principles used to build, evaluate, and critically audit language tests.
+- **Corpus Linguistics** - Computational and empirical methods for querying, tagging, and analyzing large digital collections of authentic text and speech.
+- **Advanced Discourse Analysis** - Methodologies for analyzing language beyond the sentence, including critical discourse analysis, conversation analysis, multimodal semiotics, and discursive psychology.
+- **English for Specific Purposes** - The analysis, curriculum design, and pedagogical delivery of language instruction tailored to targeted academic, professional, and workplace contexts.
+- **Intercultural Pragmatics and Communication** - The study of how interlocutors from diverse linguistic and cultural backgrounds negotiate meaning, manage interpersonal rapport, and realize speech acts.
 
 ## Language Assessment and Testing
 
-This track focuses on the theory and practice of measuring language ability, covering test construction, validity frameworks, and the Assessment Use Argument approach that dominates contemporary language assessment.
+This track investigates how language ability is conceptualized, operationalized, and evaluated across educational, institutional, and societal contexts.
 
-Assessment Use Argument Framework: [Language Assessment in Practice (Bachman & Palmer, Oxford University Press)](https://books.google.com/books?isbn=9780194426992) - the definitive treatment of test design and validity argumentation, introducing the framework that has largely replaced earlier reliability/validity models in the field.
+Test Justification and Validity Argumentation: [Language Assessment in Practice (Lyle F. Bachman & Adrian S. Palmer, Oxford University Press)](https://books.google.com/books?isbn=9780194422932) - introduces the Assessment Use Argument (AUA) framework, establishing how to articulate and justify the validity claims linking test performance to real-world educational decisions.
 
-Classroom Language Assessment: [Assessing Language Ability in the Classroom (Oller, Heinle)](https://books.google.com/books?isbn=9780838428832) - a practical guide to designing assessment tasks that go beyond discrete-point testing, focused on classroom contexts rather than large-scale standardized testing.
+Classroom-Based Assessment Design: [Language Assessment: Principles and Classroom Practices, 3rd ed. (H. Douglas Brown & Priyanvada Abeywickrama, Pearson)](https://books.google.com/books?isbn=9780134860220) - a practical guide detailing how to construct, evaluate, and score authentic classroom assessment tasks across listening, speaking, reading, and writing.
 
-Language Assessment MOOC: I checked for free courses on language testing and assessment and did not find a substantive, structured MOOC at an advanced level. The paid Bachman & Palmer book remains the authoritative entry point; search "Language Assessment in Practice Bachman Palmer" for occasional open-access chapters and author presentations hosted on university sites.
+Assessment Foundations and Practical Test Construction: [Introduction to Language Testing and Assessment (Glenn Fulcher, YouTube)](https://www.youtube.com/@glennfulcher5625) - a university-level video lecture series that systematically explores test specifications, rating scales, reliability, and validity theory.
+
+Critical Language Testing and Social Policy: [The Power of Tests: A Critical Perspective on the Uses of Language Tests (Elana Shohamy, Routledge)](https://books.google.com/books?isbn=9780582423350) - examines how standardized language assessments function as instruments of power, social control, and immigration policy, training learners to conduct critical testing audits.
 
 ## Corpus Linguistics
 
-This track covers the methods and tools for analyzing large collections of authentic text, including concordancing, frequency analysis, keyword extraction, and register variation.
+This track covers computational techniques and methodological workflows for analyzing electronic text databases to discover empirical patterns in vocabulary, grammar, and register.
 
-Corpus Methods and Tools: [Corpus Linguistics and New Technologies: Data, Language and Society (Lancaster University, edX)](https://www.edx.org/learn/linguistics/lancaster-university-corpus-linguistics-and-new-technologies-data-language-and) - a hands-on MOOC from Lancaster's corpus linguistics center, covering corpus building, concordancing, and visualization of language data. The course runs periodically in audit mode.
+Methodological Foundations and Corpus Theory: [Corpus Linguistics: Method, Theory and Practice (Tony McEnery & Andrew Hardie, Cambridge University Press)](https://books.google.com/books?isbn=9780521547369) - outlines the core quantitative methodologies of corpus research while demonstrating how empirical corpus evidence challenges and enriches broader linguistic theory.
 
-Corpus Analysis Toolkit: [AntConc (Laurence Anthony, Waseda University)](https://www.laurenceanthony.net/software/antconc/) - free, cross-platform concordancing software that is the de facto standard tool for corpus analysis in applied linguistics. Use it alongside the Lancaster MOOC to practice the techniques being taught.
+Hands-On Corpus Building and Text Processing: [Corpus Linguistics and New Technologies: Data, Language and Society (Lancaster University, edX)](https://www.edx.org/learn/social-sciences/lancaster-university-corpus-linguistics-and-new-technologies-data-language-society) - an 8-week audit-mode course teaching corpus construction, tokenization, part-of-speech tagging, and data visualization.
 
-Register Variation and Analysis: [Register, Genre, and Style (Biber & Conrad, Cambridge University Press)](https://books.google.com/books?isbn=9780521860604) - the canonical treatment of how language varies across situations of use, based on multi-dimensional analysis of large corpora. Complements the edX course by providing the theoretical grounding for corpus findings.
+Computer-Aided Text Analysis and Concordancing: [AntConc Tutorial Series (Laurence Anthony, YouTube)](https://www.youtube.com/playlist?list=PLiRIDpYmiC0R3Vv5NncOuIqaUcyLLW7Ae) - a guided tutorial series demonstrating practical workflows for keyword-in-context (KWIC) concordancing, collocation extraction, and n-gram analysis using the field's standard freeware toolkit.
 
-## Discourse Analysis
+Register Variation and Multi-Dimensional Analysis: [Register, Genre, and Style, 2nd ed. (Douglas Biber & Susan Conrad, Cambridge University Press)](https://books.google.com/books?isbn=9781108444088) - provides a comprehensive analytical framework for investigating how situational context and communicative purpose govern linguistic variation across spoken, written, and digital registers.
 
-This track covers approaches to analyzing language use beyond the sentence, including critical discourse analysis (how language reflects and constructs power), conversation analysis (the fine structure of talk-in-interaction), and multimodal analysis.
+Corpus-Assisted Discourse Studies: [Using Corpora in Discourse Analysis, 2nd ed. (Paul Baker, Bloomsbury Academic)](https://books.google.com/books?isbn=9781350083752) - bridges corpus methodologies and qualitative discourse analysis, showing how frequency, keyness, and collocation uncover latent ideological stances in text collections.
 
-Critical Discourse Analysis: [Critical Discourse Analysis (van Dijk, in Discourse Studies: A Multidisciplinary Introduction)](https://www.discourses.org/papers/18%20Critical%20Discourse%20Analysis.pdf) - a freely accessible chapter by one of the field's founders, outlining the history, agenda, and theoretical foundations of CDA.
+## Advanced Discourse Analysis
 
-Practical CDA Methods: [Critical Discourse Analysis Methods and Approaches (University of Bristol, YouTube)](https://www.youtube.com/watch?v=htaaHC3RcDQ) - a webinar by two Bristol sociolinguists demonstrating how to apply CDA to real data. Useful as a practical supplement to the more theoretical van Dijk chapter above.
+This track provides specialized methodological frameworks to analyze naturally occurring interaction, systemic power relations in text, and multimodal communication.
 
-Systematic DA Framework: [Analysing Discourse: Textual Analysis for Social Research (Fairclough, Routledge)](https://books.google.com/books?isbn=9780415258937) - Fairclough's step-by-step guide to conducting textual analysis from a CDA perspective. His three-dimensional framework is one of the most widely applied in the field.
+Critical Discourse Analysis: [Analysing Discourse: Textual Analysis for Social Research (Norman Fairclough, Routledge)](https://books.google.com/books?isbn=9780415258937) - provides a systematic three-dimensional framework combining linguistic textual analysis with social theory to reveal how power and ideology are reproduced in public discourse.
 
-Conversation Analysis: [Conversation Analysis: An Introduction (Sidnell, Wiley-Blackwell)](https://books.google.com/books?isbn=9781444357128) - a clear, practical introduction to CA methods for analyzing turn-taking, sequence organization, and repair in naturally occurring conversation. No adequate free course exists; I checked and found only scattered lecture snippets rather than a structured series.
+Conversation Analysis: [An Introduction to Conversation Analysis (Charles Antaki, Loughborough University)](https://learn.lboro.ac.uk/ludata/cx/ca-tutorials/) - an interactive, audio-supported online tutorial that teaches Jeffersonian transcription notation and the structural mechanics of turn-taking, sequence organization, and repair.
+
+Conversation Analysis: [Conversation Analysis: An Introduction (Jack Sidnell, Wiley-Blackwell)](https://books.google.com/books?isbn=9781405159012) - a comprehensive companion text to Antaki's online tutorial that examines the structural rules governing natural human conversation across institutional and everyday settings.
+
+Multimodal Discourse Analysis: [Reading Images: The Grammar of Visual Design, 3rd ed. (Gunther Kress & Theo van Leeuwen, Routledge)](https://books.google.com/books?isbn=9780415672573) - the seminal work that extends systemic functional linguistics into visual semiotics, analyzing how layout, composition, and color construct meaning in multimodal texts.
+
+Discursive Psychology: [Discourse and Social Psychology: Beyond Attitudes and Behaviour (Jonathan Potter & Margaret Wetherell, SAGE Publications)](https://books.google.com/books?isbn=9780803980563) - establishes how psychological categories such as memories, identities, and attitudes are actively constructed and negotiated in interaction rather than existing as static mental states.
 
 ## English for Specific Purposes
 
-This track covers how to design language instruction for specific domains, including needs analysis, genre-based pedagogy, and English for Academic Purposes.
+This track explores how to design, analyze, and teach language courses targeted to specific academic disciplines, technical professions, and workplace environments.
 
-ESP Overview and Needs Analysis: [Introducing English for Specific Purposes (Laurence Anthony, Routledge)](https://books.google.com/books?isbn=9781138237957) - a contemporary, comprehensive treatment of ESP theory and practice, including needs analysis, syllabus design, and materials development.
+ESP Foundations and Needs Analysis: [Introducing English for Specific Purposes (Laurence Anthony, Routledge)](https://books.google.com/books?isbn=9781138237957) - an accessible entry point covering target needs assessment, curriculum development, and materials adaptation for specialized learner groups.
 
-Genre Analysis for ESP: [Genre Analysis: English in Academic and Research Settings (Swales, Cambridge University Press)](https://books.google.com/books?isbn=9780521338134) - the foundational text that established genre analysis as the dominant approach to ESP course design, focusing on the "move structure" of academic genres.
+Genre Analysis and Move Structures: [Genre Analysis: English in Academic and Research Settings (John M. Swales, Cambridge University Press)](https://books.google.com/books?isbn=9780521338134) - the canonical monograph that introduced move analysis and the Create-A-Research-Space (CARS) model for deconstructing academic and research writing.
 
-EAP Teaching Framework: [Free Online Training Course for EAP Instructors (Center for Applied Linguistics)](https://www.cal.org/free-online-training-course-eap) - a free self-paced course from CAL focused on practical EAP teaching using the TOEFL Teaching Framework. Note that enrollment may be tied to specific cohorts.
+ESP Course Development and Case Studies: [Developing Courses in English for Specific Purposes (Helen Basturkmen, Palgrave Macmillan)](https://books.google.com/books?isbn=9780230227989) - combines course design principles with practical case studies across medicine, business, engineering, and vocational trades.
 
-## Intercultural Communication and Pragmatics
+Professional Communication in Practice: [Language in Professional Life (The Open University / OpenLearn)](https://www.open.edu/openlearn/languages/english-language/language-professional-life/content-section-0) - a free, structured course analyzing authentic spoken and written discourse across professional domains, including branding, corporate mediation, and healthcare communication.
 
-This track examines how speakers from different cultural backgrounds negotiate meaning, focusing on speech acts, politeness strategies, pragmatic transfer, and intercultural communicative competence.
+## Intercultural Pragmatics and Communication
 
-Intercultural Communication Foundations: [Intercultural Communication and Conflict Resolution (Coursera)](https://www.coursera.org/learn/intercultural-communication) - an audit-mode course covering frameworks for analyzing intercultural interactions and strategies for resolving cross-cultural communication breakdowns.
+This track explores how communication functions across cultural and linguistic boundaries, focusing on intercultural speech acts, politeness norms, and communicative misunderstandings.
 
-Speech Acts in Second Language: [Pragmatics and Speech Acts (CARLA, University of Minnesota)](https://archive.carla.umn.edu/speechacts/) - a freely accessible resource explaining how speech acts (requests, apologies, refusals) vary across languages and how they can be taught. Includes examples from CARLA's research on L2 pragmatics.
+Intercultural Communication and Negotiation: [Intercultural Communication and Conflict Resolution (University of California, Irvine / Coursera)](https://www.coursera.org/learn/intercultural-communication) - a free-to-audit video course providing practical frameworks to diagnose intercultural misunderstandings and mediate communicative breakdowns.
 
-Cross-Cultural Pragmatics Research: [Cross-Cultural Pragmatics: Requests and Apologies (Blum-Kulka, House, & Kasper, Ablex)](https://books.google.com/books?isbn=9780893913370) - the foundational empirical study comparing speech act realization across languages, establishing the methodology that subsequent cross-cultural pragmatics research has built upon.
+Empirical Speech Act Realization: [Pragmatics and Speech Acts (CARLA, University of Minnesota)](https://archive.carla.umn.edu/speechacts/) - an open research repository providing detailed descriptions, empirical data, and pedagogical strategies for analyzing cross-cultural variations in apologies, requests, compliments, and refusals.
+
+Rapport Management and Politeness Theory: [Culturally Speaking: Culture, Communication and Politeness Theory, 2nd ed. (Helen Spencer-Oatey, Ed., Continuum)](https://books.google.com/books?isbn=9781441189400) - presents the rapport management framework to explain how cultural values shape face considerations, social rights, and interactional goals during intercultural encounters.
+
+Theoretical Foundations of Intercultural Pragmatics: [Intercultural Pragmatics (Istvan Kecskes, Oxford University Press)](https://books.google.com/books?isbn=9780199892655) - introduces the socio-cognitive model of intercultural pragmatics, analyzing how interlocutors without shared cultural backgrounds co-construct meaning and common ground in real time.
