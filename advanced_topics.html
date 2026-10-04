@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+
+  <title>Advanced Topics: Applied Linguistics</title>
+  <meta name="description" content="Advanced Topics: Applied Linguistics curriculum by hocbigg.">
+  <meta name="author" content="hocbigg">
+
+  <link rel="canonical" href="https://hocbigg.github.io/applied-linguistics/advanced_topics.html">
+  <meta property="og:title" content="Advanced Topics: Applied Linguistics">
+  <meta property="og:description" content="Advanced Topics: Applied Linguistics curriculum by hocbigg.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/applied-linguistics/advanced_topics.html">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header .page-subtitle {
+  color: var(--muted);
+  font-size: 1.15rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/applied-linguistics/">Applied Linguistics</a></li>
+      <li><a href="/applied-linguistics/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/applied-linguistics/projects.html">Projects</a></li>
+      <li><a href="https://github.com/hocbigg/applied-linguistics" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <article>
+
+<h1 id="advanced-topics-applied-linguistics">Advanced Topics: Applied Linguistics</h1>
+<p>These specialization tracks build directly upon the foundational knowledge established in the Core Curriculum, allowing self-directed learners to pursue advanced methodologies, practical frameworks, and specialized subdisciplines. Learners are encouraged to select one or two tracks aligned with their intellectual interests or professional goals rather than attempting to complete every track.</p>
+<ul>
+<li><strong>Language Assessment and Testing</strong> - The theoretical frameworks, statistical validity arguments, and practical design principles used to build, evaluate, and critically audit language tests.</li>
+<li><strong>Corpus Linguistics</strong> - Computational and empirical methods for querying, tagging, and analyzing large digital collections of authentic text and speech.</li>
+<li><strong>Advanced Discourse Analysis</strong> - Methodologies for analyzing language beyond the sentence, including critical discourse analysis, conversation analysis, multimodal semiotics, and discursive psychology.</li>
+<li><strong>English for Specific Purposes</strong> - The analysis, curriculum design, and pedagogical delivery of language instruction tailored to targeted academic, professional, and workplace contexts.</li>
+<li><strong>Intercultural Pragmatics and Communication</strong> - The study of how interlocutors from diverse linguistic and cultural backgrounds negotiate meaning, manage interpersonal rapport, and realize speech acts.</li>
+</ul>
+<h2 id="language-assessment-and-testing">Language Assessment and Testing</h2>
+<p>This track investigates how language ability is conceptualized, operationalized, and evaluated across educational, institutional, and societal contexts.</p>
+<p>Test Justification and Validity Argumentation: <a href="https://books.google.com/books?isbn=9780194422932" target="_blank" rel="noopener noreferrer">Language Assessment in Practice (Lyle F. Bachman &amp; Adrian S. Palmer, Oxford University Press)</a> - introduces the Assessment Use Argument (AUA) framework, establishing how to articulate and justify the validity claims linking test performance to real-world educational decisions.</p>
+<p>Classroom-Based Assessment Design: <a href="https://books.google.com/books?isbn=9780134860220" target="_blank" rel="noopener noreferrer">Language Assessment: Principles and Classroom Practices, 3rd ed. (H. Douglas Brown &amp; Priyanvada Abeywickrama, Pearson)</a> - a practical guide detailing how to construct, evaluate, and score authentic classroom assessment tasks across listening, speaking, reading, and writing.</p>
+<p>Assessment Foundations and Practical Test Construction: <a href="https://www.youtube.com/@glennfulcher5625" target="_blank" rel="noopener noreferrer">Introduction to Language Testing and Assessment (Glenn Fulcher, YouTube)</a> - a university-level video lecture series that systematically explores test specifications, rating scales, reliability, and validity theory.</p>
+<p>Critical Language Testing and Social Policy: <a href="https://books.google.com/books?isbn=9780582423350" target="_blank" rel="noopener noreferrer">The Power of Tests: A Critical Perspective on the Uses of Language Tests (Elana Shohamy, Routledge)</a> - examines how standardized language assessments function as instruments of power, social control, and immigration policy, training learners to conduct critical testing audits.</p>
+<h2 id="corpus-linguistics">Corpus Linguistics</h2>
+<p>This track covers computational techniques and methodological workflows for analyzing electronic text databases to discover empirical patterns in vocabulary, grammar, and register.</p>
+<p>Methodological Foundations and Corpus Theory: <a href="https://books.google.com/books?isbn=9780521547369" target="_blank" rel="noopener noreferrer">Corpus Linguistics: Method, Theory and Practice (Tony McEnery &amp; Andrew Hardie, Cambridge University Press)</a> - outlines the core quantitative methodologies of corpus research while demonstrating how empirical corpus evidence challenges and enriches broader linguistic theory.</p>
+<p>Hands-On Corpus Building and Text Processing: <a href="https://www.edx.org/learn/social-sciences/lancaster-university-corpus-linguistics-and-new-technologies-data-language-society" target="_blank" rel="noopener noreferrer">Corpus Linguistics and New Technologies: Data, Language and Society (Lancaster University, edX)</a> - an 8-week audit-mode course teaching corpus construction, tokenization, part-of-speech tagging, and data visualization.</p>
+<p>Computer-Aided Text Analysis and Concordancing: <a href="https://www.youtube.com/playlist?list=PLiRIDpYmiC0R3Vv5NncOuIqaUcyLLW7Ae" target="_blank" rel="noopener noreferrer">AntConc Tutorial Series (Laurence Anthony, YouTube)</a> - a guided tutorial series demonstrating practical workflows for keyword-in-context (KWIC) concordancing, collocation extraction, and n-gram analysis using the field's standard freeware toolkit.</p>
+<p>Register Variation and Multi-Dimensional Analysis: <a href="https://books.google.com/books?isbn=9781108444088" target="_blank" rel="noopener noreferrer">Register, Genre, and Style, 2nd ed. (Douglas Biber &amp; Susan Conrad, Cambridge University Press)</a> - provides a comprehensive analytical framework for investigating how situational context and communicative purpose govern linguistic variation across spoken, written, and digital registers.</p>
+<p>Corpus-Assisted Discourse Studies: <a href="https://books.google.com/books?isbn=9781350083752" target="_blank" rel="noopener noreferrer">Using Corpora in Discourse Analysis, 2nd ed. (Paul Baker, Bloomsbury Academic)</a> - bridges corpus methodologies and qualitative discourse analysis, showing how frequency, keyness, and collocation uncover latent ideological stances in text collections.</p>
+<h2 id="advanced-discourse-analysis">Advanced Discourse Analysis</h2>
+<p>This track provides specialized methodological frameworks to analyze naturally occurring interaction, systemic power relations in text, and multimodal communication.</p>
+<p>Critical Discourse Analysis: <a href="https://books.google.com/books?isbn=9780415258937" target="_blank" rel="noopener noreferrer">Analysing Discourse: Textual Analysis for Social Research (Norman Fairclough, Routledge)</a> - provides a systematic three-dimensional framework combining linguistic textual analysis with social theory to reveal how power and ideology are reproduced in public discourse.</p>
+<p>Conversation Analysis: <a href="https://learn.lboro.ac.uk/ludata/cx/ca-tutorials/" target="_blank" rel="noopener noreferrer">An Introduction to Conversation Analysis (Charles Antaki, Loughborough University)</a> - an interactive, audio-supported online tutorial that teaches Jeffersonian transcription notation and the structural mechanics of turn-taking, sequence organization, and repair.</p>
+<p>Conversation Analysis: <a href="https://books.google.com/books?isbn=9781405159012" target="_blank" rel="noopener noreferrer">Conversation Analysis: An Introduction (Jack Sidnell, Wiley-Blackwell)</a> - a comprehensive companion text to Antaki's online tutorial that examines the structural rules governing natural human conversation across institutional and everyday settings.</p>
+<p>Multimodal Discourse Analysis: <a href="https://books.google.com/books?isbn=9780415672573" target="_blank" rel="noopener noreferrer">Reading Images: The Grammar of Visual Design, 3rd ed. (Gunther Kress &amp; Theo van Leeuwen, Routledge)</a> - the seminal work that extends systemic functional linguistics into visual semiotics, analyzing how layout, composition, and color construct meaning in multimodal texts.</p>
+<p>Discursive Psychology: <a href="https://books.google.com/books?isbn=9780803980563" target="_blank" rel="noopener noreferrer">Discourse and Social Psychology: Beyond Attitudes and Behaviour (Jonathan Potter &amp; Margaret Wetherell, SAGE Publications)</a> - establishes how psychological categories such as memories, identities, and attitudes are actively constructed and negotiated in interaction rather than existing as static mental states.</p>
+<h2 id="english-for-specific-purposes">English for Specific Purposes</h2>
+<p>This track explores how to design, analyze, and teach language courses targeted to specific academic disciplines, technical professions, and workplace environments.</p>
+<p>ESP Foundations and Needs Analysis: <a href="https://books.google.com/books?isbn=9781138237957" target="_blank" rel="noopener noreferrer">Introducing English for Specific Purposes (Laurence Anthony, Routledge)</a> - an accessible entry point covering target needs assessment, curriculum development, and materials adaptation for specialized learner groups.</p>
+<p>Genre Analysis and Move Structures: <a href="https://books.google.com/books?isbn=9780521338134" target="_blank" rel="noopener noreferrer">Genre Analysis: English in Academic and Research Settings (John M. Swales, Cambridge University Press)</a> - the canonical monograph that introduced move analysis and the Create-A-Research-Space (CARS) model for deconstructing academic and research writing.</p>
+<p>ESP Course Development and Case Studies: <a href="https://books.google.com/books?isbn=9780230227989" target="_blank" rel="noopener noreferrer">Developing Courses in English for Specific Purposes (Helen Basturkmen, Palgrave Macmillan)</a> - combines course design principles with practical case studies across medicine, business, engineering, and vocational trades.</p>
+<p>Professional Communication in Practice: <a href="https://www.open.edu/openlearn/languages/english-language/language-professional-life/content-section-0" target="_blank" rel="noopener noreferrer">Language in Professional Life (The Open University / OpenLearn)</a> - a free, structured course analyzing authentic spoken and written discourse across professional domains, including branding, corporate mediation, and healthcare communication.</p>
+<h2 id="intercultural-pragmatics-and-communication">Intercultural Pragmatics and Communication</h2>
+<p>This track explores how communication functions across cultural and linguistic boundaries, focusing on intercultural speech acts, politeness norms, and communicative misunderstandings.</p>
+<p>Intercultural Communication and Negotiation: <a href="https://www.coursera.org/learn/intercultural-communication" target="_blank" rel="noopener noreferrer">Intercultural Communication and Conflict Resolution (University of California, Irvine / Coursera)</a> - a free-to-audit video course providing practical frameworks to diagnose intercultural misunderstandings and mediate communicative breakdowns.</p>
+<p>Empirical Speech Act Realization: <a href="https://archive.carla.umn.edu/speechacts/" target="_blank" rel="noopener noreferrer">Pragmatics and Speech Acts (CARLA, University of Minnesota)</a> - an open research repository providing detailed descriptions, empirical data, and pedagogical strategies for analyzing cross-cultural variations in apologies, requests, compliments, and refusals.</p>
+<p>Rapport Management and Politeness Theory: <a href="https://books.google.com/books?isbn=9781441189400" target="_blank" rel="noopener noreferrer">Culturally Speaking: Culture, Communication and Politeness Theory, 2nd ed. (Helen Spencer-Oatey, Ed., Continuum)</a> - presents the rapport management framework to explain how cultural values shape face considerations, social rights, and interactional goals during intercultural encounters.</p>
+<p>Theoretical Foundations of Intercultural Pragmatics: <a href="https://books.google.com/books?isbn=9780199892655" target="_blank" rel="noopener noreferrer">Intercultural Pragmatics (Istvan Kecskes, Oxford University Press)</a> - introduces the socio-cognitive model of intercultural pragmatics, analyzing how interlocutors without shared cultural backgrounds co-construct meaning and common ground in real time.</p>
+    </article>
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+
+  <title>Hocbigg - Applied Linguistics</title>
+  <meta name="description" content="Path to a free self-taught education in Applied Linguistics">
+  <meta name="author" content="hocbigg">
+
+  <link rel="canonical" href="https://hocbigg.github.io/applied-linguistics/">
+  <meta property="og:title" content="Hocbigg - Applied Linguistics">
+  <meta property="og:description" content="Path to a free self-taught education in Applied Linguistics">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/applied-linguistics/">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header .page-subtitle {
+  color: var(--muted);
+  font-size: 1.15rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/applied-linguistics/">Applied Linguistics</a></li>
+      <li><a href="/applied-linguistics/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/applied-linguistics/projects.html">Projects</a></li>
+      <li><a href="https://github.com/hocbigg/applied-linguistics" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <article>
+<header class="page-header">
+  <img src="/images/logo.png" alt="Hocbigg logo">
+  <h1>Hocbigg - Applied Linguistics</h1>
+  <p class="page-subtitle">Path to a free self-taught education in Applied Linguistics</p>
+  <p class="last-updated"><small>Last updated on: <time datetime="2026-10-03">2026-10-03</time></small></p>
+</header>
+<h2 id="introduction">Introduction</h2>
+<p>Applied linguistics is an interdisciplinary field dedicated to identifying, understanding, and resolving real-world problems involving language. While theoretical linguistics primarily investigates language as an abstract, formal cognitive system, applied linguistics examines how language functions in society, education, institutional settings, law, and human interaction. People study applied linguistics to improve language education, analyze communicative breakdowns across cultures, interrogate power dynamics and bias in public discourse, and understand how the human mind acquires and processes multiple languages.</p>
+<p>This curriculum is built for independent, self-directed learners with no prior formal background in linguistics, language pedagogy, or cognitive science. No institutional affiliation, statistical background, or foreign language teaching experience is required.</p>
+<p>While self-directed study allows for personal flexibility, the curriculum follows a deliberate pedagogical sequence designed to build analytical capabilities systematically:</p>
+<ul>
+<li><strong>Orientation:</strong> Begin with <em>Foundations of Applied Linguistics</em> to grasp the real-world scope, history, and professional domains of the discipline, followed by <em>Introduction to Linguistics</em> to establish the baseline scientific principles of language.</li>
+<li><strong>Descriptive Tools:</strong> Complete <em>Descriptive Linguistic Analysis: Sounds and Grammar</em> next. This module equips you with the phonetic transcription skills, morphological terminology, and syntactic tools necessary to describe authentic language data and learner errors.</li>
+<li><strong>Context and Interaction:</strong> Move into <em>Pragmatics and Discourse Analysis</em> and <em>Sociolinguistics</em> to explore how meaning is negotiated in context, how conversation is structured, and how language variation intersects with power, identity, and social policy. These two subjects can be studied in either order once your descriptive foundations are in place.</li>
+<li><strong>Cognition, Acquisition, and Pedagogy:</strong> Study <em>Psycholinguistics and First Language Acquisition</em> to understand the cognitive architecture of language processing and child development. This subject provides the theoretical foundation for <em>Second Language Acquisition</em>, which investigates how older learners develop an interlanguage. Finally, <em>Language Teaching Methodology</em> translates these cognitive and developmental insights into concrete instructional techniques, syllabus design, and classroom practice.</li>
+</ul>
+<p>This page contains only the core foundational subjects that every learner in applied linguistics should master before branching into specialized subfields. It establishes the conceptual models, analytical toolkits, and shared vocabulary common to all areas of the discipline.</p>
+<p>Once you have completed this foundational sequence, you can tailor your studies to specific domains:</p>
+<ul>
+<li>Pursue specialized subfields like corpus linguistics, language assessment, and English for specific purposes in <a href="advanced_topics.html">Advanced Topics</a>.</li>
+<li>Apply your knowledge by compiling custom corpora, designing assessment rubrics, or writing policy briefs in <a href="projects.html">Projects</a>.</li>
+</ul>
+<h2 id="curriculum">Curriculum</h2>
+<h3 id="foundations-of-applied-linguistics">Foundations of Applied Linguistics</h3>
+<p>An overview of applied linguistics as an interdisciplinary field dedicated to identifying, analyzing, and solving real-world, language-related problems across education, society, and policy.</p>
+<p><a href="https://books.google.com/books?isbn=9781138290136" target="_blank" rel="noopener noreferrer">An Introduction to Applied Linguistics, 3rd ed. (Norbert Schmitt and Michael P. H. Rodgers, Eds., Routledge)</a> - the comprehensive core survey covering the full scope of the discipline, from grammar and vocabulary to forensic linguistics and language assessment.</p>
+<p><a href="https://books.google.com/books?isbn=9780194375986" target="_blank" rel="noopener noreferrer">Applied Linguistics (Guy Cook, Oxford University Press)</a> - a shorter, conceptually focused alternative to Schmitt and Rodgers that introduces how linguistic inquiry interfaces with practical dilemmas in law, education, and social interaction.</p>
+<h3 id="introduction-to-linguistics">Introduction to Linguistics</h3>
+<p>A survey of the scientific study of language, establishing the universal design features and core analytical categories of human language systems.</p>
+<p><a href="https://www.youtube.com/playlist?list=PLmsIjFudc1l1BwLOh-O64hcjQnuKzkIU2" target="_blank" rel="noopener noreferrer">Crash Course Linguistics (YouTube)</a> - a fast-paced introductory video series that offers an engaging first pass through the major branches of language science.</p>
+<p><a href="https://ecampusontario.pressbooks.pub/essentialsoflinguistics2/" target="_blank" rel="noopener noreferrer">Essentials of Linguistics, 2nd ed. (Catherine Anderson et al., eCampusOntario)</a> - a free, open-access textbook with accompanying video explanations that provides a structured, chapter-by-chapter foundation in core linguistic concepts.</p>
+<p><a href="https://ocw.mit.edu/courses/24-900-introduction-to-linguistics-spring-2022/" target="_blank" rel="noopener noreferrer">MIT 24.900 Introduction to Linguistics, Spring 2022 (MIT OpenCourseWare)</a> - a rigorous, lecture-based university course that deepens theoretical comprehension through full video recordings and problem sets.</p>
+<p><a href="https://www.coursera.org/learn/human-language" target="_blank" rel="noopener noreferrer">Miracles of Human Language: An Introduction to Linguistics (Coursera / University of Amsterdam)</a> - a guided, audit-mode MOOC featuring discussions with practicing linguists that serves as an interactive alternative to independent textbook reading.</p>
+<h3 id="descriptive-linguistic-analysis-sounds-and-grammar">Descriptive Linguistic Analysis: Sounds and Grammar</h3>
+<p>The study of speech production, sound patterns, word formation, and syntactic structure, providing the descriptive toolkit needed to analyze learner errors and authentic language data.</p>
+<p><a href="https://books.google.com/books?isbn=9781108730713" target="_blank" rel="noopener noreferrer">The Study of Language, 7th ed. (George Yule, Cambridge University Press)</a> - an accessible, exercise-driven textbook covering phonetics, phonology, morphology, and grammar with ample cross-linguistic examples.</p>
+<p><a href="https://ecampusontario.pressbooks.pub/essentialsoflinguistics2/" target="_blank" rel="noopener noreferrer">Essentials of Linguistics, 2nd ed. (Catherine Anderson et al., eCampusOntario)</a> - an open-access reading option whose dedicated chapters on sounds, words, and sentences offer an entirely free alternative to commercial structural grammars.</p>
+<p>The Virtual Linguistics Campus - VLC105 Phonetics, Phonology &amp; Transcription (YouTube) - search "VLC105 Phonetics, Phonology &amp; Transcription" on YouTube for systematic e-lectures on phonetic articulation and IPA transcription that directly reinforce the sound-analysis chapters of your textbook.</p>
+<h3 id="pragmatics-and-discourse-analysis">Pragmatics and Discourse Analysis</h3>
+<p>How speakers create and interpret meaning in context, spanning speech act theory, conversational interaction, genre conventions, and textual coherence.</p>
+<p><a href="https://books.google.com/books?isbn=9781350093621" target="_blank" rel="noopener noreferrer">Discourse Analysis: An Introduction, 3rd ed. (Brian Paltridge, Bloomsbury Academic)</a> - the foundational textbook for learning how spoken and written texts are structured, covering conversation analysis, genre theory, and critical discourse analysis.</p>
+<p><a href="https://books.google.com/books?isbn=9780194372077" target="_blank" rel="noopener noreferrer">Pragmatics (George Yule, Oxford University Press)</a> - a compact primer that details micro-pragmatic phenomena such as implicature, deixis, and speech acts, serving as essential preparatory reading for Paltridge's broader discourse frameworks.</p>
+<p><a href="https://ecampusontario.pressbooks.pub/essentialsoflinguistics2/" target="_blank" rel="noopener noreferrer">Essentials of Linguistics, 2nd ed. (Catherine Anderson et al., eCampusOntario)</a> - use the pragmatics chapter here as a concise, open-access summary of conversational maxims and presuppositions before beginning your main reading.</p>
+<h3 id="sociolinguistics">Sociolinguistics</h3>
+<p>The study of language in its social environment, examining how regional variation, social identity, prestige, and power dynamics shape linguistic behavior and language policy.</p>
+<p><a href="https://books.google.com/books?isbn=9780367421106" target="_blank" rel="noopener noreferrer">An Introduction to Sociolinguistics, 6th ed. (Janet Holmes and Nick Wilson, Routledge)</a> - an engaging, highly narrative introduction filled with international case studies on dialects, multilingualism, and language attitudes.</p>
+<p><a href="https://books.google.com/books?isbn=9781118732298" target="_blank" rel="noopener noreferrer">An Introduction to Sociolinguistics, 7th ed. (Ronald Wardhaugh and Janet M. Fuller, Wiley-Blackwell)</a> - a structured academic alternative to Holmes and Wilson, offering deeper explorations of variationist sociolinguistics and language planning.</p>
+<p><a href="https://ecampusontario.pressbooks.pub/essentialsoflinguistics2/" target="_blank" rel="noopener noreferrer">Essentials of Linguistics, 2nd ed. (Catherine Anderson et al., eCampusOntario)</a> - the sociolinguistics chapter provides an open-access foundational overview of language variation and speech communities.</p>
+<h3 id="psycholinguistics-and-first-language-acquisition">Psycholinguistics and First Language Acquisition</h3>
+<p>How the human brain processes, comprehends, and produces speech, alongside the developmental milestones of child language acquisition.</p>
+<p><a href="https://ocw.mit.edu/courses/24-904-language-acquisition-spring-2022/" target="_blank" rel="noopener noreferrer">MIT 24.904 Language Acquisition, Spring 2022 (MIT OpenCourseWare)</a> - a university course offering open lecture materials and assignments focused on developmental milestones, learnability, and first-language structural growth.</p>
+<p><a href="https://books.google.com/books?isbn=9781317895205" target="_blank" rel="noopener noreferrer">An Introduction to Psycholinguistics, 2nd ed. (Danny D. Steinberg and Natalia V. Sciarini, Routledge)</a> - a comprehensive introductory book that bridges cognitive processing, mental lexicon access, and childhood language development.</p>
+<p><a href="https://ecampusontario.pressbooks.pub/essentialsoflinguistics2/" target="_blank" rel="noopener noreferrer">Essentials of Linguistics, 2nd ed. (Catherine Anderson et al., eCampusOntario)</a> - the psycholinguistics and first-language development chapters offer a clear, self-contained overview that establishes foundational concepts before engaging with MIT OCW materials.</p>
+<h3 id="second-language-acquisition">Second Language Acquisition</h3>
+<p>The mechanisms, developmental sequences, and individual learner differences that govern how children and adults acquire additional languages.</p>
+<p><a href="https://books.google.com/books?isbn=9780194406291" target="_blank" rel="noopener noreferrer">How Languages Are Learned, 5th ed. (Patsy M. Lightbown and Nina Spada, Oxford University Press)</a> - the preeminent introduction to SLA research, explicitly comparing first- and second-language acquisition patterns and linking theory to classroom reality.</p>
+<p><a href="https://books.google.com/books?isbn=9781316603925" target="_blank" rel="noopener noreferrer">Introducing Second Language Acquisition, 3rd ed. (Muriel Saville-Troike and Karen Barto, Cambridge University Press)</a> - a more academically structured alternative to Lightbown and Spada that explores SLA through distinct linguistic, psychological, and social perspectives.</p>
+<h3 id="language-teaching-methodology">Language Teaching Methodology</h3>
+<p>The principles, historical evolutions, and contemporary practices of second and foreign language instruction, curricular design, and classroom management.</p>
+<p><a href="https://books.google.com/books?isbn=9781107675964" target="_blank" rel="noopener noreferrer">Approaches and Methods in Language Teaching, 3rd ed. (Jack C. Richards and Theodore S. Rodgers, Cambridge University Press)</a> - the definitive historical and structural survey comparing language teaching models from Grammar Translation to Communicative and Task-Based Language Teaching.</p>
+<p><a href="https://books.google.com/books?isbn=9781447980254" target="_blank" rel="noopener noreferrer">The Practice of English Language Teaching, 5th ed. (Jeremy Harmer, Pearson)</a> - a practical guide that complements the theoretical models of Richards and Rodgers with concrete guidance on lesson planning, receptive and productive skill development, and classroom dynamics.</p>
+<p><a href="https://www.coursera.org/learn/english-principles" target="_blank" rel="noopener noreferrer">Teach English Now! Foundational Principles (Arizona State University / Coursera)</a> - an open-audit video course that introduces core teaching principles, lesson framing, and classroom techniques, providing an interactive audiovisual foundation alongside your reading.</p>
+    </article>
+  </main>
+
+</body>
+</html>
